@@ -17,7 +17,7 @@ pipeline {
         }
         stage ("build an image") {
             steps {
-                sh ' sudo docker build -t yannmanux/myimage .'
+                sh 'docker build -t yannmanux/myimage .'
             }
         }
         stage (" login to dockerhub") {
